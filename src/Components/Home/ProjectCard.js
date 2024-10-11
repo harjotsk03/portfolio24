@@ -8,8 +8,8 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-full mb-14 flex flex-row pl-20 items-center py-10 bg-green-card rounded-3xl">
-      <div className="w-1/2 flex flex-col">
+    <div className="w-full mb-14 flex flex-col lg:flex-row px-10 lg:pl-20 items-center py-10 bg-green-card rounded-3xl">
+      <div className="lg:w-1/2 flex flex-col">
         <div className="flex flex-row gap-6">
           {project.liveSiteLink && (
             <button
@@ -31,14 +31,14 @@ export const ProjectCard = ({ project }) => {
           )}
         </div>
 
-        <h1 className="text-white poppins-medium text-[3vw] w-3/4 leading-tight">
+        <h1 className="text-white poppins-medium text-4xl lg:text-[3vw] lg:w-3/4 leading-tight">
           {project.title}
         </h1>
-        <h1 className="text-white poppins-regular text-lg w-4/5 mt-3">
+        <h1 className="text-white poppins-regular text-lg lg:w-4/5 mt-3">
           {project.description}
         </h1>
 
-        <div className="flex-wrap flex w-3/4 gap-x-6 gap-y-2 mt-8">
+        <div className="flex-wrap flex lg:w-3/4 gap-x-6 gap-y-2 mt-8">
           {project.technologies.map((tech, index) => (
             <p
               key={index}
@@ -54,8 +54,12 @@ export const ProjectCard = ({ project }) => {
           <FiArrowUpRight className="transform transition-transform duration-300 ease-in-out group-hover:rotate-45" />
         </button>
       </div>
-      <div className="w-1/2 flex flex-col">
-        <img src={project.image} alt={project.title} />
+      <div className="lg:w-1/2 flex flex-col">
+        <img
+          className="w-full h-full"
+          src={project.imazge}
+          alt={project.title}
+        />
       </div>
     </div>
   );

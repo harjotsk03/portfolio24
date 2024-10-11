@@ -20,7 +20,7 @@ export const Experience = () => {
     },
   ];
   return (
-    <div className="px-52 pt-20 w-full overflow-x-hidden z-40 relative flex flex-col items-start justify-center">
+    <div className="px-52 pt-20 w-full overflow-x-hidden z-20 relative flex flex-col items-start justify-center">
       <h1 className="text-white text-5xl poppins-medium mb-10">
         <sup className="text-sm poppins-light align-super">02</sup> Experience
       </h1>
