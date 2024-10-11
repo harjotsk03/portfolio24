@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  background-color: #172A21;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+html {
+    scrollbar-width: none; /* Hides the scrollbar */
+}
+
+body {
+    -ms-overflow-style: none; /* Hides scrollbar */
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.text-green-100-custom{
+  color: #4F8C6F;
+}
+
+.text-green-200-custom{
+  color: #3A6350;
+}
+
+.bg-green-100-custom{
+  background-color: #1F392D;
+}
+
+.bg-green-200-custom{
+  background-color: #172A21;
+}
+
+.bg-green-card{
+  background-color: #1F392D;
+}
+
+.bg-green-button{
+  background-color: #4F8C6F;
+}
+
+.bg-green-card2{
+  background-color: #172A21;
+}
+
+@keyframes arrowAnimation {
+  0%{
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.arrowAnimation {
+  animation: arrowAnimation 2s ease-in-out infinite;
+}
