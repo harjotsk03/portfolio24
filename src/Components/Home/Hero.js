@@ -42,7 +42,7 @@ export const Hero = () => {
       <h1 className="text-white text-8xl leading-tight lg:text-[11vw] poppins-semibold">
         Harjot Singh
       </h1>
-      <p className="poppins-light text-green-100-custom text-md lg:text-lg mt-6 lg:mt-0">
+      <p className="poppins-light text-green-100-custom text-md lg:text-lg mt-6">
         A student and aspiring software engineer with a focus on user experience
       </p>
       <p className="poppins-light text-green-200-custom text-sm lg:text-lg mt-2">

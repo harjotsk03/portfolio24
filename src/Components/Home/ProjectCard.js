@@ -8,7 +8,7 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-full mb-14 flex flex-col lg:flex-row px-10 lg:pl-20 items-center py-10 bg-green-card rounded-3xl">
+    <div className="w-full mb-20 flex flex-col overflow-hidden lg:flex-row px-10 lg:px-0 lg:pl-20 items-center lg:pt-20 pb-40 lg:pb-20 pt-10 bg-green-card rounded-3xl relative">
       <div className="lg:w-1/2 flex flex-col">
         <div className="flex flex-row gap-6">
           {project.liveSiteLink && (
@@ -49,15 +49,16 @@ export const ProjectCard = ({ project }) => {
           ))}
         </div>
 
-        <button className="group bg-green-button gap-2 mt-10 w-max text-white px-4 py-2 rounded-full flex flex-row items-center">
+        <button className="group bg-green-button gap-2 mt-10 w-max text-white px-4 py-2 rounded-full flex flex-row items-center transition-colors duration-300 ease-in-out hover:bg-white hover:text-green-700">
           Case Study
           <FiArrowUpRight className="transform transition-transform duration-300 ease-in-out group-hover:rotate-45" />
         </button>
       </div>
-      <div className="lg:w-1/2 flex flex-col">
+
+      <div className="lg:w-1/2 w-full h-full -mb-10 lg:mb-0 mt-4 lg:mt-0  flex flex-col relative">
         <img
-          className="w-full h-full"
-          src={project.imazge}
+          className="absolute lg:right-[-10%] top-1/2 transform lg:-translate-y-1/2 w-full lg:w-full h-auto object-cover "
+          src={project.image}
           alt={project.title}
         />
       </div>

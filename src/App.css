@@ -95,6 +95,11 @@ body {
 
 .bg-green-card{
   background-color: #1F392D;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-green-card:hover{
+  background-color: #243e32;
 }
 
 .bg-green-button{
