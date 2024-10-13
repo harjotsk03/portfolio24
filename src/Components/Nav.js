@@ -1,11 +1,21 @@
 import { useState, useEffect, useRef } from "react";
 import { FiDownload, FiMenu, FiX } from "react-icons/fi";
 import logo from "../Images/logoWebsite.svg";
+import { useNavigate } from "react-router-dom";
 
 export const Nav = () => {
+  const navigate = useNavigate();
   const [navWidth, setNavWidth] = useState("bg-transparent w-full");
   const [menuOpen, setMenuOpen] = useState(false); // State to handle mobile menu toggle
   const lastScrollY = useRef(0);
+
+  const goTo = (link) => {
+    navigate(`/${link}`);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +41,15 @@ export const Nav = () => {
       <div
         className={`flex flex-row z-50 justify-between items-center px-8 lg:px-14 rounded-full py-4 lg:py-6 fixed top-4 left-1/2 transform -translate-x-1/2 transition-all duration-700 ease-in-out ${navWidth}`}
       >
-        <div className="flex flex-row items-center gap-3">
+        <button
+          onClick={() => goTo("")}
+          className="flex flex-row items-center gap-3"
+        >
           <div className="hidden lg:flex h-0.5 w-14 bg-white rounded-full"></div>
           <div className="w-6 h-6 flex items-center justify-center">
             <img src={logo} className="w-full h-full object-cover" alt="Logo" />
           </div>
-        </div>
+        </button>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-row gap-10">

@@ -1,9 +1,22 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 export const ProjectCard = ({ project }) => {
+  const navigate = useNavigate();
+
   const openLink = (url) => {
     if (url) {
       window.open(url, "_blank");
+    }
+  };
+
+  const openPage = (url) => {
+    if (url) {
+      navigate(`/${url}`);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -49,7 +62,10 @@ export const ProjectCard = ({ project }) => {
           ))}
         </div>
 
-        <button className="group bg-green-button gap-2 mt-10 w-max text-white px-4 py-2 rounded-full flex flex-row items-center transition-colors duration-300 ease-in-out hover:bg-white hover:text-green-700">
+        <button
+          onClick={() => openPage(project.casePageLin)}
+          className="group bg-green-button gap-2 mt-10 w-max text-white px-4 py-2 rounded-full flex flex-row items-center transition-colors duration-300 ease-in-out hover:bg-white hover:text-green-700"
+        >
           Case Study
           <FiArrowUpRight className="transform transition-transform duration-300 ease-in-out group-hover:rotate-45" />
         </button>

@@ -10,7 +10,7 @@ export const Projects = () => {
       title: "Bin There, Dumped That",
       gitHubLink: "https://github.com/caleb05w/BinThereDumpedThat",
       liveSiteLink: null,
-      casePageLin: "",
+      casePageLin: "bintheredumpedthat",
       description: "Improve waste management, with an affordable solution.",
       technologies: [
         "ReactJS",

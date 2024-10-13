@@ -9,6 +9,7 @@ html, body {
   padding: 0;
   overflow: scroll;
   background-color: #172A21;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -83,6 +84,10 @@ body {
 
 .text-green-200-custom{
   color: #3A6350;
+}
+
+.text-green-300-custom{
+  color: #15271F;
 }
 
 .bg-green-100-custom{
