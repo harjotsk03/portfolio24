@@ -8,7 +8,7 @@ export const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-full mb-20 flex flex-col overflow-hidden lg:flex-row px-10 lg:px-0 lg:pl-20 items-center lg:pt-20 pb-40 lg:pb-20 pt-10 bg-green-card rounded-3xl relative">
+    <div className="w-full mb-10 lg:mb-20 flex flex-col overflow-hidden lg:flex-row px-8 lg:px-0 lg:pl-20 items-center lg:pt-20 pb-48 lg:pb-20 pt-10 bg-green-card rounded-3xl relative">
       <div className="lg:w-1/2 flex flex-col">
         <div className="flex flex-row gap-6">
           {project.liveSiteLink && (
@@ -31,7 +31,7 @@ export const ProjectCard = ({ project }) => {
           )}
         </div>
 
-        <h1 className="text-white poppins-medium text-4xl lg:text-[3vw] lg:w-3/4 leading-tight">
+        <h1 className="text-white poppins-semibold text-4xl lg:text-[3vw] lg:w-3/4 leading-tight">
           {project.title}
         </h1>
         <h1 className="text-white poppins-regular text-lg lg:w-4/5 mt-3">

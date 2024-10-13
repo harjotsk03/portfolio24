@@ -21,7 +21,7 @@ export const Footer = () => {
           CSS
         </h3>
       </div>
-      <div className=" h-1/2 text-right lg:h-full lg:w-1/2 flex flex-row justify-end ml-8 gap-20 lg:justify-end items-end lg:gap-20">
+      <div className=" h-1/2 lg:text-right lg:h-full lg:w-1/2 flex flex-row justify-start ml-8 gap-20 lg:justify-end items-start lg:items-end lg:gap-20">
         <div className="flex flex-col gap-1">
           <h2 className="poppins-medium text-white text-xl leading-loose lg:leading-normal">
             Connect
@@ -31,7 +31,7 @@ export const Footer = () => {
             target="_blank"
             href="https://www.linkedin.com/in/harjotsingh7/"
           >
-            <h2 className="text-green-100-custom gap-1 flex flex-row items-center w-max poppins-light mt-1 ml-auto">
+            <h2 className="text-green-100-custom gap-1 flex flex-row items-center w-max poppins-light mt-1 lg:ml-auto">
               linkedin{" "}
               <FiArrowUpRight className="transform transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </h2>
@@ -41,13 +41,13 @@ export const Footer = () => {
             target="_blank"
             href="https://github.com/harjotsk03"
           >
-            <h2 className="text-green-100-custom flex flex-row items-center w-max poppins-light mt-1 ml-auto">
+            <h2 className="text-green-100-custom flex flex-row items-center w-max poppins-light mt-1 lg:ml-auto">
               github{" "}
               <FiArrowUpRight className="transform transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </h2>
           </a>
           <a className="group" href={resume} download>
-            <h2 className="text-green-100-custom flex flex-row items-center w-max poppins-light mt-1 ml-auto">
+            <h2 className="text-green-100-custom flex flex-row items-center w-max poppins-light mt-1 lg:ml-auto">
               download resume{" "}
               <FiArrowUpRight className="transform transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </h2>
