@@ -36,20 +36,31 @@ export const Home = () => {
 
   return (
     <div className="">
-      <div className="fixed w-[150vw] z-0 top-0 left-0 lg:-left-60 h-full">
+      <div className="fixed fadeInFast w-[150vw] z-0 top-0 left-0 lg:-left-60 h-full">
         <img src={logo} alt="Logo" className="object-cover w-full h-full" />
       </div>
-      <Hero />
-      <Projects />
-      <Experience />
-      <Achievements />
+
+      {/* Sections with IDs */}
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="achievements">
+        <Achievements />
+      </section>
+
       <Footer />
 
       {/* Scroll to Top Button */}
       {showScrollToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 z-40 right-6 shadow-sm shadow-green-900 lg:shadow-none p-4 bg-green-100-custom text-white rounded-full transition"
+          className="fixed bottom-6 z-30 right-6 p-4 text-green-200-custom bg-white rounded-full transition"
         >
           <FaArrowUp />
         </button>

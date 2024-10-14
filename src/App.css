@@ -9,7 +9,7 @@ html, body {
   padding: 0;
   overflow: scroll;
   background-color: #172A21;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 ::-webkit-scrollbar {
@@ -86,6 +86,19 @@ body {
   color: #3A6350;
 }
 
+.text-green-400-custom{
+  color: #a1b9ae;
+}
+
+.text-green-200-custom-hover{
+  color: #3A6350;
+  transition: 0.3s ease-in-out;
+}
+
+.text-green-200-custom-hover:hover{
+  color: white;
+}
+
 .text-green-300-custom{
   color: #15271F;
 }
@@ -131,4 +144,36 @@ body {
 
 .arrowAnimation {
   animation: arrowAnimation 2s ease-in-out infinite;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp {
+  animation: fadeUp 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.fadeInFast {
+  animation: fadeIn 1s ease-in-out;
 }

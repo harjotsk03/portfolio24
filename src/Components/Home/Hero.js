@@ -39,16 +39,18 @@ export const Hero = () => {
 
   return (
     <div className="z-20 w-full overflow-x-hidden h-screen pb-20 lg:pb-10 px-5 lg:px-14 relative flex flex-col items-start lg:items-center justify-center">
-      <h1 className="text-white text-8xl leading-tight lg:text-[11vw] poppins-semibold">
+      <h1 className="text-white fadeUp text-8xl leading-tight lg:text-[11vw] poppins-semibold">
         Harjot Singh
       </h1>
-      <p className="poppins-light text-green-100-custom text-md lg:text-lg mt-6">
+      <p className="poppins-light fadeUp text-green-100-custom text-md lg:text-lg mt-6">
         A student and aspiring software engineer with a focus on user experience
       </p>
-      <p className="poppins-light text-green-200-custom text-sm lg:text-lg mt-2">
+      <p className="poppins-light fadeUp text-green-200-custom text-sm lg:text-lg mt-2">
         BSc. Computing Science & Interactive Technology
       </p>
-      <div className="flex flex-col items-start lg:items-center w-full mr-2 mt-16">
+
+      {/* Ensure this div has a relative position so that ScrollToExplore can be positioned correctly */}
+      <div className="relative flex flex-col fadeUp items-start lg:items-center w-full mr-2 mt-16">
         <div className="">
           <div className="">
             {buttonData.map(({ icon, tooltip, link, key }) => (
@@ -61,9 +63,8 @@ export const Hero = () => {
             ))}
           </div>
         </div>
-
-        <ScrollToExplore />
       </div>
+      <ScrollToExplore />
     </div>
   );
 };

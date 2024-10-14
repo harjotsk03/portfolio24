@@ -15,7 +15,6 @@ export const ProjectCard = ({ project }) => {
       navigate(`/${url}`);
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
       });
     }
   };

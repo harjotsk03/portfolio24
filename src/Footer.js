@@ -8,7 +8,7 @@ export const Footer = () => {
   };
 
   return (
-    <div className="w-full z-50 relative h-max pb-10 lg:px-40 lg:py-32 flex flex-col gap-10 justify-between lg:flex-row footer">
+    <div className="w-full z-30 relative h-max pb-10 lg:px-40 lg:py-32 flex flex-col gap-10 justify-between lg:flex-row footer">
       <div className=" h-1/2 px-8 py-10 lg:py-0 lg:px-0 lg:h-full flex flex-col justify-between lg:w-1/3">
         <h3 className="poppins-medium text-white text-xl leading-loose lg:leading-normal">
           Harjot Singh. <br></br>

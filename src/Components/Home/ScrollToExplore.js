@@ -1,6 +1,6 @@
 export const ScrollToExplore = () => {
   return (
-    <div className="absolute bottom-36 lg:bottom-6 opacity-70 lg:bottom-8 flex gap-2 left-8 lg:left-1/2 transform lg:-translate-x-1/2">
+    <div className="absolute bottom-36 opacity-70 fadeIn lg:bottom-6 flex gap-2 left-8 lg:left-1/2 transform lg:-translate-x-1/2">
       <h4 className="poppins-light text-green-200-custom text-opacity-30">
         keep scrolling
       </h4>
