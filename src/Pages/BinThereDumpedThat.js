@@ -1,6 +1,8 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import image from "../Images/BinThereIpad.png";
 import logo from "../Images/logoWebsiteBG.svg";
+import binOne from "../Images/DSC_0138.JPG";
+import binTwo from "../Images/binThere.png";
 
 export const BinThereDumpedThat = () => {
   return (
@@ -37,6 +39,16 @@ export const BinThereDumpedThat = () => {
           />
         </div>
       </div>
+
+      {/* <div className="relative flex group justify-center items-center fadeUp mt-20 z-30 -ml-20 rounded-[4vw] w-full h-[60vh] overflow-hidden">
+        <img
+          className="object-center w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105 group-hover:origin-center"
+          src={binOne}
+          alt="Image"
+        />
+
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      </div> */}
 
       <div className="relative fadeUp mt-24 lg:-ml-6 lg:pr-14 z-30">
         <div className="flex flex-col lg:flex-row items-center">
@@ -89,10 +101,7 @@ export const BinThereDumpedThat = () => {
           </div> */}
           </div>
           <div className="px-0 w-full lg:px-20 py-16 flex lg:w-3/5 flex-col rounded-3xl">
-            <h1 className="text-white text-3xl mb-2 poppins-medium">
-              Overview
-            </h1>
-            <p className="text-green-400-custom text-lg leading-relaxed tracking-wider poppins-light">
+            <p className="text-green-400-custom text-xl leading-relaxed tracking-wider poppins-light">
               Bin There, Dumped That is an easily integratable{" "}
               <span className="text-white poppins-medium">
                 hardware system{" "}
