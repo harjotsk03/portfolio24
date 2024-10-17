@@ -30,7 +30,7 @@ export const Experience = () => {
           <h1 className="text-3xl poppins-medium text-white mt-1">
             {role.name}
           </h1>
-          <p className="text-white poppins-light text-lg leading-relaxed mt-4">
+          <p className="text-green-500-custom poppins-light text-lg leading-relaxed mt-4">
             {role.description}
           </p>
         </div>

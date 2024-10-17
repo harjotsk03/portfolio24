@@ -41,7 +41,7 @@ export const Nav = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > 100) {
-        setNavWidth("bg-green-200-custom w-5/6");
+        setNavWidth("bg-green-600-custom w-5/6");
       } else {
         setNavWidth("bg-transparent w-full");
       }

@@ -40,16 +40,6 @@ export const BinThereDumpedThat = () => {
         </div>
       </div>
 
-      {/* <div className="relative flex group justify-center items-center fadeUp mt-20 z-30 -ml-20 rounded-[4vw] w-full h-[60vh] overflow-hidden">
-        <img
-          className="object-center w-full h-full object-cover transition-transform duration-1000 ease-in-out group-hover:scale-105 group-hover:origin-center"
-          src={binOne}
-          alt="Image"
-        />
-
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-      </div> */}
-
       <div className="relative fadeUp mt-24 lg:-ml-6 lg:pr-14 z-30">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:px-20 lg:py-16 px-10 py-10 h-max flex lg:w-2/5 ml-auto flex-row bg-green-100-custom rounded-3xl">

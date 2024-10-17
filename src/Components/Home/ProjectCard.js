@@ -43,10 +43,13 @@ export const ProjectCard = ({ project }) => {
           )}
         </div>
 
+        <h1 className="text-green-100-custom poppins-regular text-base mb-1 mt-2 lg:w-3/4 leading-tight">
+          {project.type}
+        </h1>
         <h1 className="text-white poppins-semibold text-4xl lg:text-[3vw] lg:w-3/4 leading-tight">
           {project.title}
         </h1>
-        <h1 className="text-white poppins-regular text-lg lg:w-4/5 mt-3">
+        <h1 className="text-white poppins-regular text-base lg:w-11/12 mt-3">
           {project.description}
         </h1>
 

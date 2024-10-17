@@ -103,12 +103,20 @@ body {
   color: #15271F;
 }
 
+.text-green-500-custom{
+  color: #95b1a5;
+}
+
 .bg-green-100-custom{
   background-color: #1F392D;
 }
 
 .bg-green-200-custom{
   background-color: #172A21;
+}
+
+.bg-green-600-custom{
+    background-color: #233c30;
 }
 
 .bg-green-card{
@@ -170,10 +178,4 @@ body {
   }
 }
 
-.fadeIn {
-  animation: fadeIn 3s ease-in-out;
-}
 
-.fadeInFast {
-  animation: fadeIn 1s ease-in-out;
-}

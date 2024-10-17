@@ -1,15 +1,36 @@
 import { ProjectCard } from "./ProjectCard";
 import BinThereIpad from "../../Images/BinThereIpad.png";
 import SFURSIpad from "../../Images/SFURSIpad.png";
+import StudySpotr from "../../Images/studySpotr.png";
 import EcoGrowIpad from "../../Images/EcoGrowIpad.png";
 import PharmaboticsIpad from "../../Images/PharmaboticsIpad.png";
 
 export const Projects = () => {
   const projectsData = [
     {
+      title: "Study Spotr",
+      gitHubLink: null,
+      liveSiteLink: "https://www.studyspotr.com/",
+      type: "Full Stack Software Development",
+      casePageLin: "studySpotr",
+      description:
+        "Designed and developed a study spot finder where users can find, add, and rate study spots near them or anywhere around the world",
+      technologies: [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "TailwindCSS",
+        "Google Maps API",
+        "AWS",
+      ],
+      image: StudySpotr,
+    },
+    {
       title: "Bin There, Dumped That",
       gitHubLink: "https://github.com/caleb05w/BinThereDumpedThat",
       liveSiteLink: null,
+      type: "Software & Hardware Development",
       casePageLin: "bintheredumpedthat",
       description: "Improve waste management, with an affordable solution.",
       technologies: [
@@ -28,8 +49,9 @@ export const Projects = () => {
       gitHubLink: "https://github.com/caleb05w/BinThereDumpedThat",
       liveSiteLink: "https://sfurobotsoccer.com",
       casePageLin: "",
+      type: "Web Design & Development",
       description:
-        "Redesign and develop SFU RS website to improve mobile accessability.",
+        "Redesigned and developed the SFU RS website for better mobile usability, a more unified feeling UI, and better user engagement",
       technologies: ["ReactJS", "TailwindCSS", "Google Firebase"],
       image: SFURSIpad,
     },
@@ -38,6 +60,7 @@ export const Projects = () => {
       gitHubLink: "https://github.com/caleb05w/BinThereDumpedThat",
       liveSiteLink: null,
       casePageLin: "",
+      type: "Software & Hardware Development",
       description:
         "An automated medicine dispensing system using hardware and software.",
       technologies: [
@@ -55,6 +78,7 @@ export const Projects = () => {
       gitHubLink: "https://github.com/caleb05w/BinThereDumpedThat",
       liveSiteLink: null,
       casePageLin: "",
+      type: "Software/Game Development",
       description:
         "A garden simulation game to learn Object Oriented Programming.",
       technologies: ["Java"],
