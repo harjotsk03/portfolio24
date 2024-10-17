@@ -99,7 +99,7 @@ export const Nav = () => {
           >
             Achievements
           </button>
-          <button className="text-white poppins-regular text-sm">About</button>
+          {/* <button className="text-white poppins-regular text-sm">About</button> */}
           <button className="text-white gap-2 flex flex-row items-center poppins-regular text-sm">
             Download Resume <FiDownload />
           </button>
