@@ -63,6 +63,15 @@ export const Nav = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const goToPage = (page) => {
+    scrollToTop();
+    navigate(page);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {/* Main Navbar */}
@@ -99,7 +108,12 @@ export const Nav = () => {
           >
             Achievements
           </button>
-          {/* <button className="text-white poppins-regular text-sm">About</button> */}
+          <button
+            onClick={() => goToPage("about")}
+            className="text-white poppins-regular text-sm"
+          >
+            About
+          </button>
           <button className="text-white gap-2 flex flex-row items-center poppins-regular text-sm">
             Download Resume <FiDownload />
           </button>

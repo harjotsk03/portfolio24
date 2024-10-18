@@ -21,11 +21,11 @@ export const Experience = () => {
   ];
   return (
     <div className="lg:px-52 px-4 pt-20 w-full overflow-x-hidden z-20 relative flex flex-col items-start justify-center">
-      <h1 className="text-white text-[11vw] lg:text-5xl poppins-medium mb-10">
+      <h1 className="text-white text-[11vw] fadeUp lg:text-5xl poppins-medium mb-10">
         <sup className="text-sm poppins-light align-super">02</sup> Experience
       </h1>
       {experience.map((role, index) => (
-        <div className="lg:px-8 px-4 mb-14" key={index}>
+        <div className="lg:px-8 fadeUp px-4 mb-14" key={index}>
           <h2 className="poppins-regular text-green-100-custom">{role.date}</h2>
           <h1 className="text-3xl poppins-medium text-white mt-1">
             {role.name}
