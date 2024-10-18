@@ -39,6 +39,10 @@ export const StudySpotr = () => {
     };
   }, []);
 
+  const goTo = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <>
       <div className="w-screen h-max overflow-x-hidden pl-8 pr-8 lg:pr-0 lg:pt-28 pt-24 lg:pl-40 overflow-y-scroll relative">
@@ -58,7 +62,10 @@ export const StudySpotr = () => {
               spots near them or anywhere around the world
             </h4>
             <div className="flex flex-row items-center gap-10">
-              <button className="poppins-regular w-max text-sm lg:text-base fadeUp flex flex-row items-center gap-1 text-green-200-custom-hover mt-6 lg:mt-12 text-left group">
+              <button
+                onClick={() => goTo("https://www.studyspotr.com/")}
+                className="poppins-regular w-max text-sm lg:text-base fadeUp flex flex-row items-center gap-1 text-green-200-custom-hover mt-6 lg:mt-12 text-left group"
+              >
                 Live Site
                 <FiArrowUpRight className="transform transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-300" />
               </button>

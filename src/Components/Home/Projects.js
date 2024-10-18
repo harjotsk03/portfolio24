@@ -31,7 +31,7 @@ export const Projects = () => {
       gitHubLink: "https://github.com/caleb05w/BinThereDumpedThat",
       liveSiteLink: null,
       type: "Software & Hardware Development",
-      casePageLin: null,
+      casePageLin: "bintheredumpedthat",
       description: "Improve waste management, with an affordable solution.",
       technologies: [
         "ReactJS",
