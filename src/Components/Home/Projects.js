@@ -44,47 +44,47 @@ export const Projects = () => {
       ],
       image: BinThereIpad,
     },
-    {
-      title: "SFU Robot Soccer Website",
-      gitHubLink:
-        "https://github.com/SFURobotSoccer/sfurobotsoccerwebsitedashboard",
-      liveSiteLink: "https://sfurobotsoccer.com",
-      casePageLin: null,
-      type: "Web Design & Development",
-      description:
-        "Redesigned and developed the SFU RS website for better mobile usability, a more unified feeling UI, and better user engagement",
-      technologies: ["ReactJS", "TailwindCSS", "Google Firebase"],
-      image: SFURSIpad,
-    },
-    {
-      title: "Pharmabotics",
-      gitHubLink: "https://github.com/harjotsk03/pharmabotics",
-      liveSiteLink: null,
-      casePageLin: null,
-      type: "Software & Hardware Development",
-      description:
-        "An automated medicine dispensing system using hardware and software.",
-      technologies: [
-        "ReactJS",
-        "TailwindCSS",
-        "NodeJS",
-        "ExpressJS",
-        "MongoDB",
-        "Arduino (C++)",
-      ],
-      image: PharmaboticsIpad,
-    },
-    {
-      title: "EcoGrow",
-      gitHubLink: "https://github.com/harjotsk03/GardenSimulationJava",
-      liveSiteLink: null,
-      casePageLin: null,
-      type: "Software/Game Development",
-      description:
-        "A garden simulation game to learn Object Oriented Programming.",
-      technologies: ["Java"],
-      image: EcoGrowIpad,
-    },
+    // {
+    //   title: "SFU Robot Soccer Website",
+    //   gitHubLink:
+    //     "https://github.com/SFURobotSoccer/sfurobotsoccerwebsitedashboard",
+    //   liveSiteLink: "https://sfurobotsoccer.com",
+    //   casePageLin: null,
+    //   type: "Web Design & Development",
+    //   description:
+    //     "Redesigned and developed the SFU RS website for better mobile usability, a more unified feeling UI, and better user engagement",
+    //   technologies: ["ReactJS", "TailwindCSS", "Google Firebase"],
+    //   image: SFURSIpad,
+    // },
+    // {
+    //   title: "Pharmabotics",
+    //   gitHubLink: "https://github.com/harjotsk03/pharmabotics",
+    //   liveSiteLink: null,
+    //   casePageLin: null,
+    //   type: "Software & Hardware Development",
+    //   description:
+    //     "An automated medicine dispensing system using hardware and software.",
+    //   technologies: [
+    //     "ReactJS",
+    //     "TailwindCSS",
+    //     "NodeJS",
+    //     "ExpressJS",
+    //     "MongoDB",
+    //     "Arduino (C++)",
+    //   ],
+    //   image: PharmaboticsIpad,
+    // },
+    // {
+    //   title: "EcoGrow",
+    //   gitHubLink: "https://github.com/harjotsk03/GardenSimulationJava",
+    //   liveSiteLink: null,
+    //   casePageLin: null,
+    //   type: "Software/Game Development",
+    //   description:
+    //     "A garden simulation game to learn Object Oriented Programming.",
+    //   technologies: ["Java"],
+    //   image: EcoGrowIpad,
+    // },
   ];
 
   return (
